@@ -28,3 +28,12 @@ let pessoa4 = {} as IPessoa
 pessoa4.nome = "carlos",
 pessoa4.idade = 19,
 pessoa4.profissao = Profissao.Padeiro
+
+function show(pessoa: IPessoa) {
+
+    const [nome, idade, profissao] = [pessoa.nome, pessoa.idade, pessoa.profissao]
+
+    return(`Olá, sou ${nome}, tenho ${idade} de idade e sou ${profissao}`)
+}
+
+console.log(show(pessoa2))
