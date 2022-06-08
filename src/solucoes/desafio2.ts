@@ -1,6 +1,6 @@
 enum Profissao {
-    Atriz,
-    Padeiro,
+    Atriz = 'Atriz',
+    Padeiro = 'Pedreiro',
 }
 
 interface IPessoa {
@@ -37,3 +37,5 @@ function show(pessoa: IPessoa) {
 }
 
 console.log(show(pessoa2))
+console.log(show(pessoa1))
+console.log(show(pessoa3))
